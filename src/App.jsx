@@ -50,37 +50,75 @@ const WORKOUTS = {
     ],
   },
   19: {
-    title: "FIX THE CAVE",
-    subtitle: "Squat Correction · Glute Med · 30 min",
-    tag: "TECHNIQUE",
-    tagColor: "#3b82f6",
-    banner: { text: "SPREAD THE FLOOR — Push feet apart like ripping the floor in half. Knees track out automatically.", color: "#3b82f6" },
+    title: "PUMP DAY",
+    subtitle: "Arms & Back · 80/20 Split · 30 min",
+    tag: "ARMS",
+    tagColor: "#a855f7",
     blocks: [
-      { label: "SQUAT PREP", color: "#f97316", exercises: [
-        { name: "Clamshell", detail: "15 each side · squeeze glute med at top · hold 2 sec", sets: 1 },
-        { name: "Lateral Walk", detail: "15 steps each direction · stay low · push knees OUT", sets: 1 },
-        { name: "Goblet Squat Hold (20lb)", detail: "60 sec · elbows push knees out · teaches correct position", sets: 1 },
-        { name: "Box Squat to Bench", detail: "10 reps · drive knees OUT as you stand · slow", sets: 1 },
-        { name: "Hip Circle", detail: "10 each direction · tight hips cause valgus collapse", sets: 1 },
+      { label: "WARM-UP", color: "#f97316", exercises: [
+        { name: "Chin Tucks", detail: "10 reps slow · reverse the screen posture · hold 2 sec at end range", sets: 1 },
+        { name: "Arm Circle", detail: "15 forward, 15 back · full range · loosen the shoulder capsule", sets: 1 },
+        { name: "Chest Opener / Band Pull-Apart", detail: "15 reps · arms straight out front · pull to a T · activates rear delts", sets: 1 },
+        { name: "Wrist Circle + Forearm Stretch", detail: "10 each direction · extend arm · pull fingers back · prep for curls and extensions", sets: 1 },
       ]},
-      { label: "BLOCK 1", color: "#3b82f6", rest: 75, exercises: [
-        { name: "Barbell Back Squat", detail: "5 reps · LIGHTER THAN USUAL · spread the floor · knees out down AND up", tracked: true, sets: 4 },
-        { name: "Ankle Strap Cable Hip Abduction", detail: "15 each side · direct glute med work", tracked: true, sets: 4 },
+      { label: "BLOCK 1 — TRICEPS", color: "#3b82f6", rest: 45, exercises: [
+        { name: "Rope Tricep Pushdown", detail: "15 reps · elbows pinned · flare rope out at bottom · squeeze hard · 3 sec up", tracked: true, sets: 3 },
+        { name: "Cable Overhead Tricep Extension (Rope)", detail: "12 reps · face away · rope behind head · elbows close · full stretch at bottom · best long head builder", tracked: true, sets: 3 },
       ]},
-      { label: "BLOCK 2", color: "#a855f7", rest: 45, exercises: [
-        { name: "KB Sumo Squat (36lb)", detail: "12 reps · wide stance · knees track over toes · drive knees OUT", sets: 3 },
-        { name: "KB Single-Leg Glute Bridge (36lb)", detail: "10 each side · isolates each glute", sets: 3 },
-        { name: "Landmine Press (Alternating)", detail: "8 each side · brace core · don't let hips shift", tracked: true, sets: 3 },
+      { label: "BLOCK 2 — BICEPS", color: "#a855f7", rest: 45, exercises: [
+        { name: "Cable Curl (Low Attachment)", detail: "12 reps · elbows pinned · curl to chin · squeeze at top · 3 sec down · constant tension", tracked: true, sets: 3 },
+        { name: "Cable Hammer Curl (Rope, Low)", detail: "12 reps · neutral grip · palms facing each other · hits brachialis · thickens the arm", tracked: true, sets: 3 },
       ]},
-      { label: "POSTURE WORK", color: "#10b981", exercises: [
+      { label: "BLOCK 3 — BACK 20%", color: "#10b981", rest: 45, exercises: [
+        { name: "Barbell Bent-Over Row", detail: "8 reps · hinge to 45° · pull to belly button · squeeze lats · 3 sec lower", tracked: true, sets: 2 },
+        { name: "Cable Face Pull (Rope, High)", detail: "15 reps · elbows at ear height · pull to forehead · external rotate at end · shoulder health", tracked: true, sets: 2 },
+      ]},
+      { label: "POSTURE WORK", color: "#ef4444", exercises: [
         { name: "Wall Chin Tuck", detail: "10 reps · hold 2 sec · daily habit", sets: 1 },
-        { name: "Doorway Chest Opener", detail: "45 sec · fix the rounded shoulders", sets: 1 },
-        { name: "Anterior Pelvic Tilt Correction", detail: "Lie flat · flatten back · hold 10 sec × 6", sets: 1 },
+        { name: "Doorway Chest Opener", detail: "45 sec · reverse the desk damage", sets: 1 },
       ]},
       { label: "COOL DOWN", color: "#06b6d4", exercises: [
-        { name: "Low Lunge Hip Flexor Stretch", detail: "45 sec each side · root cause of valgus", sets: 1 },
-        { name: "Frog Stretch", detail: "60 sec · inner thigh and groin release", sets: 1 },
+        { name: "Cross-Body Shoulder Stretch", detail: "30 sec each side", sets: 1 },
+        { name: "Overhead Tricep Stretch", detail: "30 sec each side · reach arm overhead · pull elbow back", sets: 1 },
+        { name: "Supine Bicep Stretch", detail: "30 sec each side · arm out to side · turn head away", sets: 1 },
+      ]},
+    ],
+  },
+  20: {
+    title: "PUSH DAY",
+    subtitle: "Bench · Landmine · Cable · 45 min",
+    tag: "PUSH",
+    tagColor: "#3b82f6",
+    blocks: [
+      { label: "WARM-UP", color: "#f97316", exercises: [
+        { name: "Arm Circle + Shoulder Roll", detail: "15 forward, 15 back · full range · decompress before pressing", sets: 1 },
+        { name: "Band Pull-Apart or Chest Opener", detail: "15 reps · rear delt activation before heavy pressing", sets: 1 },
+        { name: "Push-Up (slow)", detail: "10 reps · 3 sec down · groove the pressing pattern before loading", sets: 1 },
+        { name: "Hip Circle", detail: "10 each direction", sets: 1 },
+      ]},
+      { label: "BLOCK 1", color: "#3b82f6", rest: 60, exercises: [
+        { name: "Incline Barbell Bench Press", detail: "8 reps · 3 sec down · full range · barbell goes away after this", tracked: true, sets: 4 },
+        { name: "Cable Straight-Arm Pulldown (Rope, High)", detail: "12 reps · lats only · 3 sec up · builds pull-up strength · no lower back demand", tracked: true, sets: 4 },
+      ]},
+      { label: "BLOCK 2", color: "#a855f7", rest: 45, exercises: [
+        { name: "Landmine Press (Alternating)", detail: "8 each side · controlled arc · don't rush · shoulder packed down", tracked: true, sets: 3 },
+        { name: "Landmine Rotation", detail: "10 each side · rotate from hips · core stays braced · lower back neutral", tracked: true, sets: 3 },
+        { name: "KB Farmers Carry — 52lb", detail: "30 steps · shoulders packed · don't lean · gap filler", sets: 3 },
+      ]},
+      { label: "BLOCK 3", color: "#10b981", rest: 30, exercises: [
+        { name: "Rope Tricep Pushdown", detail: "15 reps · elbows pinned · squeeze at bottom · arms are already warmed up", tracked: true, sets: 3 },
+        { name: "Cable Face Pull (Rope, High)", detail: "15 reps · shoulder health · never skip this · elbows high", tracked: true, sets: 3 },
+        { name: "Arm Sling Hanging Knee Raise", detail: "12 reps · no swinging · exhale on the way up", sets: 3 },
+      ]},
+      { label: "POSTURE WORK", color: "#ef4444", exercises: [
+        { name: "Wall Chin Tuck", detail: "10 reps · hold 2 sec", sets: 1 },
+        { name: "Doorway Chest Opener", detail: "45 sec · reverse the bench press", sets: 1 },
+        { name: "Anterior Pelvic Tilt Correction", detail: "Lie flat · flatten lower back · hold 10 sec × 6", sets: 1 },
+      ]},
+      { label: "COOL DOWN", color: "#06b6d4", exercises: [
         { name: "Pigeon Pose", detail: "45 sec each side", sets: 1 },
+        { name: "Lat Hang from Pull-Up Bar", detail: "30 sec · decompress the spine", sets: 1 },
+        { name: "Cross-Body Shoulder Stretch", detail: "30 sec each side", sets: 1 },
       ]},
     ],
   },
@@ -88,9 +126,9 @@ const WORKOUTS = {
 
 // Add more workouts as needed — same structure
 const UPCOMING = [
-  { day: 20, title: "PUSH DAY", subtitle: "Bench · Landmine Press · Cable · 45 min", tag: "COMING SOON", tagColor: "#555" },
   { day: 21, title: "KB CIRCUIT", subtitle: "Functional · EMOM Option · 30–45 min", tag: "COMING SOON", tagColor: "#555" },
   { day: 22, title: "PULL & HINGE", subtitle: "Rows · RDL · Cable · 45 min", tag: "COMING SOON", tagColor: "#555" },
+  { day: 23, title: "SOFT WORK", subtitle: "Mobility · Breathwork · Incline Walk", tag: "COMING SOON", tagColor: "#555" },
 ];
 
 // ── AUDIO ────────────────────────────────────────────────────────────────────
