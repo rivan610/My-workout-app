@@ -50,37 +50,250 @@ const WORKOUTS = {
     ],
   },
   19: {
-    title: "FIX THE CAVE",
-    subtitle: "Squat Correction · Glute Med · 30 min",
-    tag: "TECHNIQUE",
-    tagColor: "#3b82f6",
-    banner: { text: "SPREAD THE FLOOR — Push feet apart like ripping the floor in half. Knees track out automatically.", color: "#3b82f6" },
+    title: "PUMP DAY",
+    subtitle: "Arms & Back · 80/20 Split · 30 min",
+    tag: "ARMS",
+    tagColor: "#a855f7",
     blocks: [
-      { label: "SQUAT PREP", color: "#f97316", exercises: [
-        { name: "Clamshell", detail: "15 each side · squeeze glute med at top · hold 2 sec", sets: 1 },
-        { name: "Lateral Walk", detail: "15 steps each direction · stay low · push knees OUT", sets: 1 },
-        { name: "Goblet Squat Hold (20lb)", detail: "60 sec · elbows push knees out · teaches correct position", sets: 1 },
-        { name: "Box Squat to Bench", detail: "10 reps · drive knees OUT as you stand · slow", sets: 1 },
-        { name: "Hip Circle", detail: "10 each direction · tight hips cause valgus collapse", sets: 1 },
+      { label: "WARM-UP", color: "#f97316", exercises: [
+        { name: "Chin Tucks", detail: "10 reps slow · reverse the screen posture · hold 2 sec at end range", sets: 1 },
+        { name: "Arm Circle", detail: "15 forward, 15 back · full range · loosen the shoulder capsule", sets: 1 },
+        { name: "Chest Opener / Band Pull-Apart", detail: "15 reps · arms straight out front · pull to a T · activates rear delts", sets: 1 },
+        { name: "Wrist Circle + Forearm Stretch", detail: "10 each direction · extend arm · pull fingers back · prep for curls and extensions", sets: 1 },
       ]},
-      { label: "BLOCK 1", color: "#3b82f6", rest: 75, exercises: [
-        { name: "Barbell Back Squat", detail: "5 reps · LIGHTER THAN USUAL · spread the floor · knees out down AND up", tracked: true, sets: 4 },
-        { name: "Ankle Strap Cable Hip Abduction", detail: "15 each side · direct glute med work", tracked: true, sets: 4 },
+      { label: "BLOCK 1 — TRICEPS", color: "#3b82f6", rest: 45, exercises: [
+        { name: "Rope Tricep Pushdown", detail: "15 reps · elbows pinned · flare rope out at bottom · squeeze hard · 3 sec up", tracked: true, sets: 3 },
+        { name: "Cable Overhead Tricep Extension (Rope)", detail: "12 reps · face away · rope behind head · elbows close · full stretch at bottom · best long head builder", tracked: true, sets: 3 },
       ]},
-      { label: "BLOCK 2", color: "#a855f7", rest: 45, exercises: [
-        { name: "KB Sumo Squat (36lb)", detail: "12 reps · wide stance · knees track over toes · drive knees OUT", sets: 3 },
-        { name: "KB Single-Leg Glute Bridge (36lb)", detail: "10 each side · isolates each glute", sets: 3 },
-        { name: "Landmine Press (Alternating)", detail: "8 each side · brace core · don't let hips shift", tracked: true, sets: 3 },
+      { label: "BLOCK 2 — BICEPS", color: "#a855f7", rest: 45, exercises: [
+        { name: "Cable Curl (Low Attachment)", detail: "12 reps · elbows pinned · curl to chin · squeeze at top · 3 sec down · constant tension", tracked: true, sets: 3 },
+        { name: "Cable Hammer Curl (Rope, Low)", detail: "12 reps · neutral grip · palms facing each other · hits brachialis · thickens the arm", tracked: true, sets: 3 },
       ]},
-      { label: "POSTURE WORK", color: "#10b981", exercises: [
+      { label: "BLOCK 3 — BACK 20%", color: "#10b981", rest: 45, exercises: [
+        { name: "Barbell Bent-Over Row", detail: "8 reps · hinge to 45° · pull to belly button · squeeze lats · 3 sec lower", tracked: true, sets: 2 },
+        { name: "Cable Face Pull (Rope, High)", detail: "15 reps · elbows at ear height · pull to forehead · external rotate at end · shoulder health", tracked: true, sets: 2 },
+      ]},
+      { label: "POSTURE WORK", color: "#ef4444", exercises: [
         { name: "Wall Chin Tuck", detail: "10 reps · hold 2 sec · daily habit", sets: 1 },
-        { name: "Doorway Chest Opener", detail: "45 sec · fix the rounded shoulders", sets: 1 },
-        { name: "Anterior Pelvic Tilt Correction", detail: "Lie flat · flatten back · hold 10 sec × 6", sets: 1 },
+        { name: "Doorway Chest Opener", detail: "45 sec · reverse the desk damage", sets: 1 },
       ]},
       { label: "COOL DOWN", color: "#06b6d4", exercises: [
-        { name: "Low Lunge Hip Flexor Stretch", detail: "45 sec each side · root cause of valgus", sets: 1 },
-        { name: "Frog Stretch", detail: "60 sec · inner thigh and groin release", sets: 1 },
+        { name: "Cross-Body Shoulder Stretch", detail: "30 sec each side", sets: 1 },
+        { name: "Overhead Tricep Stretch", detail: "30 sec each side · reach arm overhead · pull elbow back", sets: 1 },
+        { name: "Supine Bicep Stretch", detail: "30 sec each side · arm out to side · turn head away", sets: 1 },
+      ]},
+    ],
+  },
+  20: {
+    title: "PUSH DAY",
+    subtitle: "Bench · Landmine · Cable · 45 min",
+    tag: "PUSH",
+    tagColor: "#3b82f6",
+    blocks: [
+      { label: "WARM-UP", color: "#f97316", exercises: [
+        { name: "Arm Circle + Shoulder Roll", detail: "15 forward, 15 back · full range · decompress before pressing", sets: 1 },
+        { name: "Band Pull-Apart or Chest Opener", detail: "15 reps · rear delt activation before heavy pressing", sets: 1 },
+        { name: "Push-Up (slow)", detail: "10 reps · 3 sec down · groove the pressing pattern before loading", sets: 1 },
+        { name: "Hip Circle", detail: "10 each direction", sets: 1 },
+      ]},
+      { label: "BLOCK 1", color: "#3b82f6", rest: 60, exercises: [
+        { name: "Incline Barbell Bench Press", detail: "8 reps · 3 sec down · full range · barbell goes away after this", tracked: true, sets: 4 },
+        { name: "Cable Straight-Arm Pulldown (Rope, High)", detail: "12 reps · lats only · 3 sec up · builds pull-up strength · no lower back demand", tracked: true, sets: 4 },
+      ]},
+      { label: "BLOCK 2", color: "#a855f7", rest: 45, exercises: [
+        { name: "Landmine Press (Alternating)", detail: "8 each side · controlled arc · don't rush · shoulder packed down", tracked: true, sets: 3 },
+        { name: "Landmine Rotation", detail: "10 each side · rotate from hips · core stays braced · lower back neutral", tracked: true, sets: 3 },
+        { name: "KB Farmers Carry — 52lb", detail: "30 steps · shoulders packed · don't lean · gap filler", sets: 3 },
+      ]},
+      { label: "BLOCK 3", color: "#10b981", rest: 30, exercises: [
+        { name: "Rope Tricep Pushdown", detail: "15 reps · elbows pinned · squeeze at bottom · arms are already warmed up", tracked: true, sets: 3 },
+        { name: "Cable Face Pull (Rope, High)", detail: "15 reps · shoulder health · never skip this · elbows high", tracked: true, sets: 3 },
+        { name: "Arm Sling Hanging Knee Raise", detail: "12 reps · no swinging · exhale on the way up", sets: 3 },
+      ]},
+      { label: "POSTURE WORK", color: "#ef4444", exercises: [
+        { name: "Wall Chin Tuck", detail: "10 reps · hold 2 sec", sets: 1 },
+        { name: "Doorway Chest Opener", detail: "45 sec · reverse the bench press", sets: 1 },
+        { name: "Anterior Pelvic Tilt Correction", detail: "Lie flat · flatten lower back · hold 10 sec × 6", sets: 1 },
+      ]},
+      { label: "COOL DOWN", color: "#06b6d4", exercises: [
         { name: "Pigeon Pose", detail: "45 sec each side", sets: 1 },
+        { name: "Lat Hang from Pull-Up Bar", detail: "30 sec · decompress the spine", sets: 1 },
+        { name: "Cross-Body Shoulder Stretch", detail: "30 sec each side", sets: 1 },
+      ]},
+    ],
+  },
+};
+
+  21: {
+    title: "SHOULDER SUNDAY",
+    subtitle: "V Taper Builder · Lateral Delts · 45 min",
+    tag: "SHOULDERS",
+    tagColor: "#f59e0b",
+    blocks: [
+      { label: "WARM-UP", color: "#f97316", exercises: [
+        { name: "Arm Circle", detail: "15 forward, 15 back · full range · loosen the shoulder capsule", sets: 1 },
+        { name: "Band Pull-Apart", detail: "15 reps · arms straight · pull to T · rear delt activation", sets: 1 },
+        { name: "KB Halo (20lb)", detail: "10 each direction · keep elbows close · thoracic and shoulder mobility", sets: 1 },
+        { name: "Wall Chin Tuck", detail: "10 reps · posture reset before overhead work", sets: 1 },
+      ]},
+      { label: "BLOCK 1 — LATERAL DELTS", color: "#f59e0b", rest: 45, exercises: [
+        { name: "Cable Lateral Raise (Low, D-Handle)", detail: "15 reps · stand sideways · arm slightly forward · lead with elbow not hand · 3 sec down · best side delt builder", tracked: true, sets: 4, repsPerSet: [15, 15, 12, 12] },
+        { name: "Landmine Lateral Raise", detail: "12 reps each side · hold end of bar · raise to shoulder height · elbow soft · constant tension", tracked: true, sets: 4, repsPerSet: [12, 12, 10, 10] },
+      ]},
+      { label: "BLOCK 2 — OVERHEAD PRESS", color: "#3b82f6", rest: 60, exercises: [
+        { name: "Barbell Overhead Press", detail: "8 reps · standing · brace core · bar path straight up · don't flare elbows too wide · builds overall shoulder mass", tracked: true, sets: 4, repsPerSet: [8, 8, 6, 6] },
+        { name: "KB Upright Row (36lb)", detail: "12 reps · elbows lead up · hits side and rear delt together · don't shrug at top", sets: 3, repsPerSet: [12, 12, 12] },
+      ]},
+      { label: "BLOCK 3 — REAR DELTS", color: "#a855f7", rest: 45, exercises: [
+        { name: "Cable Face Pull (Rope, High)", detail: "15 reps · elbows at ear height · pull to forehead · external rotate · rear delt and rotator cuff health", tracked: true, sets: 3, repsPerSet: [15, 15, 15] },
+        { name: "Cable Reverse Fly (High, D-Handle)", detail: "15 reps · lean forward slightly · arms wide arc · squeeze shoulder blades · rear delt isolation", tracked: true, sets: 3, repsPerSet: [15, 15, 15] },
+      ]},
+      { label: "POSTURE WORK", color: "#10b981", exercises: [
+        { name: "Wall Chin Tuck", detail: "10 reps · hold 2 sec", sets: 1 },
+        { name: "Doorway Chest Opener", detail: "45 sec · shoulders just worked hard · open them up", sets: 1 },
+      ]},
+      { label: "COOL DOWN", color: "#06b6d4", exercises: [
+        { name: "Cross-Body Shoulder Stretch", detail: "45 sec each side", sets: 1 },
+        { name: "Overhead Tricep Stretch", detail: "30 sec each side · decompresses the shoulder capsule", sets: 1 },
+        { name: "Child's Pose with Lat Reach", detail: "45 sec each side", sets: 1 },
+      ]},
+    ],
+  },
+  22: {
+    title: "LEG DAY",
+    subtitle: "Squat · Hinge · Carry · 45 min",
+    tag: "LEGS",
+    tagColor: "#10b981",
+    blocks: [
+      { label: "WARM-UP", color: "#f97316", exercises: [
+        { name: "Hip Circle", detail: "10 each direction · loosen the hips before loading", sets: 1 },
+        { name: "Glute Bridge", detail: "15 reps · drive through heels · activate what squats need", sets: 1 },
+        { name: "Goblet Squat Hold (20lb)", detail: "60 sec · elbows push knees out · spread the floor cue", sets: 1 },
+        { name: "World's Greatest Stretch", detail: "5 each side · hips, thoracic, hamstrings in one", sets: 1 },
+      ]},
+      { label: "BLOCK 1 — SQUAT", color: "#10b981", rest: 75, exercises: [
+        { name: "Barbell Back Squat", detail: "reps per set shown · 3 sec down · spread the floor · knees out · chest tall", tracked: true, sets: 4, repsPerSet: [8, 6, 6, 5] },
+        { name: "Ankle Strap Cable Hip Abduction", detail: "15 each side · glute med superset · keeps knees tracking right", tracked: true, sets: 4, repsPerSet: [15, 15, 15, 15] },
+      ]},
+      { label: "BLOCK 2 — HINGE", color: "#3b82f6", rest: 60, exercises: [
+        { name: "Landmine Romanian Deadlift", detail: "10 each side · hinge hips back · bar guides the arc · 3 sec down · hamstrings load fully", tracked: true, sets: 3, repsPerSet: [10, 10, 8] },
+        { name: "Cable Pull-Through (Low, Rope)", detail: "15 reps · face away · rope between legs · drive hips forward · squeeze glutes at top · 2 sec hold", tracked: true, sets: 3, repsPerSet: [15, 15, 15] },
+      ]},
+      { label: "BLOCK 3 — CARRY & BURN", color: "#a855f7", rest: 30, exercises: [
+        { name: "KB Goblet Squat (36lb)", detail: "15 reps · fast pace · 3 sec down · finisher", sets: 3, repsPerSet: [15, 15, 15] },
+        { name: "KB Suitcase Carry — 52lb", detail: "30 steps each side · don't lean · core stays tight", sets: 3 },
+      ]},
+      { label: "POSTURE WORK", color: "#ef4444", exercises: [
+        { name: "Anterior Pelvic Tilt Correction", detail: "Lie flat · flatten lower back · hold 10 sec × 6 · legs just hammered the hips", sets: 1 },
+        { name: "Wall Chin Tuck", detail: "10 reps · hold 2 sec", sets: 1 },
+      ]},
+      { label: "COOL DOWN", color: "#06b6d4", exercises: [
+        { name: "Pigeon Pose", detail: "60 sec each side · hips earned this", sets: 1 },
+        { name: "Low Lunge Hip Flexor Stretch", detail: "45 sec each side", sets: 1 },
+        { name: "Standing Hamstring Stretch", detail: "45 sec each side · foot on bench · hinge from hips", sets: 1 },
+      ]},
+    ],
+  },
+  23: {
+    title: "KB CHAOS",
+    subtitle: "Functional · Explosive · 30 min",
+    tag: "KB",
+    tagColor: "#ef4444",
+    blocks: [
+      { label: "WARM-UP", color: "#f97316", exercises: [
+        { name: "KB Deadlift (36lb)", detail: "10 reps slow · groove the hinge pattern · feel the hip snap", sets: 1 },
+        { name: "KB Single-Arm Swing (36lb)", detail: "8 each side · hip snap · let the bell float · warm-up for snatches", sets: 1 },
+        { name: "Hip Circle", detail: "10 each direction", sets: 1 },
+      ]},
+      { label: "BLOCK 1 — POWER", color: "#ef4444", rest: 60, exercises: [
+        { name: "KB Swing (36lb)", detail: "15 reps · explosive hip snap · hinge not squat · let the bell float to chest height", sets: 4, repsPerSet: [15, 15, 15, 15] },
+        { name: "KB Clean & Press (36lb)", detail: "6 each side · clean to rack · press overhead · lock out · controlled lower", sets: 4, repsPerSet: [6, 6, 6, 6] },
+      ]},
+      { label: "BLOCK 2 — STRENGTH", color: "#3b82f6", rest: 45, exercises: [
+        { name: "KB Goblet Squat (52lb)", detail: "10 reps · heavy bell · 3 sec down · elbows inside knees · drive through heels", sets: 3, repsPerSet: [10, 10, 10] },
+        { name: "KB Single-Arm Row (52lb)", detail: "10 each side · chest on bench · full range · squeeze at top", sets: 3, repsPerSet: [10, 10, 10] },
+        { name: "KB Farmers Carry (52lb)", detail: "30 steps · go heavy · gap filler", sets: 3 },
+      ]},
+      { label: "BLOCK 3 — BURN", color: "#a855f7", rest: 30, exercises: [
+        { name: "KB Swing (36lb)", detail: "20 reps · this is the finisher · empty the tank", sets: 3, repsPerSet: [20, 20, 20] },
+        { name: "KB Lateral Lunge (20lb)", detail: "10 each side · controlled · adductors and glutes", sets: 3, repsPerSet: [10, 10, 10] },
+      ]},
+      { label: "COOL DOWN", color: "#06b6d4", exercises: [
+        { name: "Pigeon Pose", detail: "45 sec each side", sets: 1 },
+        { name: "Child's Pose with Lat Reach", detail: "45 sec each side · lats just worked", sets: 1 },
+        { name: "Box Breathing 4×4×4×4", detail: "6 rounds · bring the heart rate down", sets: 1 },
+      ]},
+    ],
+  },
+  24: {
+    title: "PULL HEAVY",
+    subtitle: "Rows · Pulls · Hinge · 45 min",
+    tag: "PULL",
+    tagColor: "#3b82f6",
+    blocks: [
+      { label: "WARM-UP", color: "#f97316", exercises: [
+        { name: "Band Pull-Apart", detail: "15 reps · rear delt activation before heavy rowing", sets: 1 },
+        { name: "KB Deadlift (36lb)", detail: "10 reps · groove the hinge · feel the lats engage", sets: 1 },
+        { name: "Arm Circle", detail: "10 forward, 10 back", sets: 1 },
+        { name: "Squat to Stand", detail: "8 reps · open the hips", sets: 1 },
+      ]},
+      { label: "BLOCK 1 — BARBELL ROW", color: "#3b82f6", rest: 75, exercises: [
+        { name: "Barbell Bent-Over Row", detail: "reps per set shown · hinge to 45° · pull to belly button · squeeze lats · 3 sec lower", tracked: true, sets: 4, repsPerSet: [8, 6, 6, 5] },
+        { name: "Cable Straight-Arm Pulldown (Rope, High)", detail: "12 reps · lats only · 3 sec up · pull-up strength builder", tracked: true, sets: 4, repsPerSet: [12, 12, 12, 12] },
+      ]},
+      { label: "BLOCK 2 — LANDMINE", color: "#a855f7", rest: 60, exercises: [
+        { name: "Landmine Meadows Row", detail: "10 each side · stagger stance · pull to hip · rotate at top for full lat engagement", tracked: true, sets: 3, repsPerSet: [10, 10, 10] },
+        { name: "Landmine Single-Leg RDL", detail: "8 each side · 3 sec down · balance will challenge you · go lighter · feel the hamstring", tracked: true, sets: 3, repsPerSet: [8, 8, 8] },
+        { name: "KB Farmers Carry (52lb)", detail: "30 steps · gap filler · grip strength", sets: 3 },
+      ]},
+      { label: "BLOCK 3 — CABLE FINISH", color: "#10b981", rest: 30, exercises: [
+        { name: "Cable Face Pull (Rope, High)", detail: "15 reps · shoulder health · never skip · elbows high", tracked: true, sets: 3, repsPerSet: [15, 15, 15] },
+        { name: "Cable Curl (Low Attachment)", detail: "12 reps · elbows pinned · squeeze at top · 3 sec down", tracked: true, sets: 3, repsPerSet: [12, 12, 12] },
+        { name: "Arm Sling Hanging Knee Raise", detail: "12 reps · decompress spine · no swinging", sets: 3, repsPerSet: [12, 12, 12] },
+      ]},
+      { label: "POSTURE WORK", color: "#ef4444", exercises: [
+        { name: "Wall Chin Tuck", detail: "10 reps · hold 2 sec", sets: 1 },
+        { name: "Doorway Chest Opener", detail: "45 sec · reverse the pulling", sets: 1 },
+      ]},
+      { label: "COOL DOWN", color: "#06b6d4", exercises: [
+        { name: "Lat Hang from Pull-Up Bar", detail: "30 sec · decompress after heavy rows", sets: 1 },
+        { name: "Child's Pose with Lat Reach", detail: "45 sec each side", sets: 1 },
+        { name: "Pigeon Pose", detail: "45 sec each side", sets: 1 },
+      ]},
+    ],
+  },
+  25: {
+    title: "ACTIVE RECOVERY",
+    subtitle: "Mobility · Breathwork · Incline Walk · 30 min",
+    tag: "RECOVERY",
+    tagColor: "#10b981",
+    blocks: [
+      { label: "FOAM ROLL", color: "#3b82f6", exercises: [
+        { name: "Foam Roll — Quads", detail: "60 sec each side · slow · pause on tight spots", sets: 1 },
+        { name: "Foam Roll — Upper Back", detail: "60 sec · arms crossed · open the thoracic spine", sets: 1 },
+        { name: "KB Glute Smash (36lb)", detail: "45 sec each side · sit on the bell · find the knot", sets: 1 },
+        { name: "Foam Roll — Calves", detail: "45 sec each side · cross one leg over", sets: 1 },
+      ]},
+      { label: "HIP MOBILITY", color: "#a855f7", exercises: [
+        { name: "90/90 Hip Switch", detail: "8 each side · controlled · feel the external rotation", sets: 1 },
+        { name: "Deep Squat Hip Opener", detail: "60 sec · shift side to side · use cage for support", sets: 1 },
+        { name: "Frog Stretch", detail: "60 sec · inner thigh and groin · fights the valgus collapse", sets: 1 },
+        { name: "Low Lunge Hip Flexor Stretch", detail: "45 sec each side · hips forward not up", sets: 1 },
+      ]},
+      { label: "POSTURE RESET", color: "#10b981", exercises: [
+        { name: "Wall Chin Tuck", detail: "10 reps · hold 2 sec · daily habit", sets: 1 },
+        { name: "Doorway Chest Opener", detail: "45 sec · breathe deep", sets: 1 },
+        { name: "Anterior Pelvic Tilt Correction", detail: "Lie flat · flatten lower back · hold 10 sec × 8", sets: 1 },
+      ]},
+      { label: "BREATHWORK", color: "#06b6d4", exercises: [
+        { name: "Physiological Sigh", detail: "Double inhale through nose · long exhale through mouth · 5 reps · fastest way to lower HR", sets: 1 },
+        { name: "Box Breathing 4×4×4×4", detail: "Inhale 4 · hold 4 · exhale 4 · hold 4 · 8 rounds · full nervous system reset", sets: 1 },
+        { name: "Supine Diaphragmatic Breathing", detail: "Lie flat · hand on belly · 90 sec · belly rises on inhale · parasympathetic reset", sets: 1 },
+      ]},
+      { label: "CLOSING STRETCH", color: "#f97316", exercises: [
+        { name: "Pigeon Pose", detail: "60 sec each side · deepest stretch of the week", sets: 1 },
+        { name: "Supine Figure 4", detail: "45 sec each side", sets: 1 },
+        { name: "Happy Baby Pose", detail: "60 sec · decompress everything · you earned it", sets: 1 },
       ]},
     ],
   },
@@ -88,9 +301,9 @@ const WORKOUTS = {
 
 // Add more workouts as needed — same structure
 const UPCOMING = [
-  { day: 20, title: "PUSH DAY", subtitle: "Bench · Landmine Press · Cable · 45 min", tag: "COMING SOON", tagColor: "#555" },
-  { day: 21, title: "KB CIRCUIT", subtitle: "Functional · EMOM Option · 30–45 min", tag: "COMING SOON", tagColor: "#555" },
-  { day: 22, title: "PULL & HINGE", subtitle: "Rows · RDL · Cable · 45 min", tag: "COMING SOON", tagColor: "#555" },
+  { day: 26, title: "SHOULDER SUNDAY", subtitle: "V Taper · Lateral Delts · 45 min", tag: "COMING SOON", tagColor: "#555" },
+  { day: 27, title: "PUSH DAY", subtitle: "Bench · Landmine · Cable · 45 min", tag: "COMING SOON", tagColor: "#555" },
+  { day: 28, title: "KB CHAOS", subtitle: "Functional · Explosive · 30 min", tag: "COMING SOON", tagColor: "#555" },
 ];
 
 // ── AUDIO ────────────────────────────────────────────────────────────────────
@@ -166,10 +379,29 @@ function RestTimer({ seconds, label, onClose }) {
 
 const PLATES = [5, 10, 25, 35, 45];
 
-function WeightLogger({ id, color, prevWeight, onSave }) {
-  const [mode, setMode] = useState("plates");
-  const [plates, setPlates] = useState(prevWeight?.plates || []);
-  const [lbs, setLbs] = useState(prevWeight?.lbs || "");
+// Cross-day weight lookup — finds last logged weight for an exercise by name across all days
+function findLastWeight(allLogs, exerciseName) {
+  let lastDate = null;
+  let lastWeight = null;
+  Object.entries(allLogs).forEach(([dayKey, dayLog]) => {
+    if (!dayLog.completedAt || !dayLog.weights || !dayLog.exerciseNames) return;
+    Object.entries(dayLog.exerciseNames).forEach(([key, name]) => {
+      if (name === exerciseName && dayLog.weights[key]) {
+        const d = new Date(dayLog.completedAt);
+        if (!lastDate || d > lastDate) {
+          lastDate = d;
+          lastWeight = dayLog.weights[key];
+        }
+      }
+    });
+  });
+  return lastWeight;
+}
+
+function WeightLogger({ id, color, lastWeight, onSave, setLabel }) {
+  const [mode, setMode] = useState("lbs");
+  const [plates, setPlates] = useState(lastWeight?.plates || []);
+  const [lbs, setLbs] = useState(lastWeight?.lbs || "");
 
   const togglePlate = (p) => {
     const arr = [...plates];
@@ -183,18 +415,20 @@ function WeightLogger({ id, color, prevWeight, onSave }) {
   const display = mode === "plates" ? (plates.length > 0 ? `${total}lb` : null) : (lbs ? `${lbs}lb` : null);
 
   return (
-    <div style={{ marginTop: 10, background: "#0d0d0d", border: `1px solid ${color}22`, borderRadius: 10, padding: "10px 12px" }}>
-      {prevWeight && (
-        <div style={{ fontFamily: "'Barlow', sans-serif", fontSize: 11, color: "#f59e0b", marginBottom: 8, display: "flex", gap: 6 }}>
-          <span style={{ opacity: 0.6 }}>↑ Last:</span>
-          <span style={{ fontWeight: 700 }}>{prevWeight.plates?.length > 0 ? `${prevWeight.plates.reduce((a,b)=>a+b,0)}lb plates` : prevWeight.lbs ? `${prevWeight.lbs}lb` : "—"}</span>
-        </div>
-      )}
+    <div style={{ marginTop: 8, background: "#0d0d0d", border: `1px solid ${color}22`, borderRadius: 10, padding: "10px 12px" }}>
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 8 }}>
+        <span style={{ fontFamily: "'Barlow Condensed', sans-serif", fontSize: 10, letterSpacing: 2, color: "#555", textTransform: "uppercase" }}>{setLabel}</span>
+        {lastWeight && (
+          <span style={{ fontFamily: "'Barlow', sans-serif", fontSize: 11, color: "#f59e0b" }}>
+            ↑ Last: <strong>{lastWeight.lbs ? `${lastWeight.lbs}lb` : lastWeight.plates?.length > 0 ? `${lastWeight.plates.reduce((a,b)=>a+b,0)}lb` : "—"}</strong>
+          </span>
+        )}
+      </div>
       <div style={{ display: "flex", gap: 6, marginBottom: 8 }}>
-        {["plates", "lbs"].map(m => (
-          <button key={m} onClick={() => setMode(m)} style={{ background: mode === m ? color + "33" : "transparent", border: `1px solid ${mode === m ? color : "#2a2a2a"}`, color: mode === m ? color : "#555", borderRadius: 6, padding: "3px 10px", fontFamily: "'Barlow Condensed', sans-serif", fontSize: 11, letterSpacing: 2, cursor: "pointer", textTransform: "uppercase" }}>{m === "plates" ? "Plates" : "Total lbs"}</button>
+        {["lbs", "plates"].map(m => (
+          <button key={m} onClick={() => setMode(m)} style={{ background: mode === m ? color + "33" : "transparent", border: `1px solid ${mode === m ? color : "#2a2a2a"}`, color: mode === m ? color : "#555", borderRadius: 6, padding: "3px 10px", fontFamily: "'Barlow Condensed', sans-serif", fontSize: 11, letterSpacing: 2, cursor: "pointer", textTransform: "uppercase" }}>{m === "plates" ? "Plates" : "lbs"}</button>
         ))}
-        {display && <div style={{ marginLeft: "auto", fontFamily: "'Barlow Condensed', sans-serif", fontSize: 12, color: "#10b981", alignSelf: "center" }}>{display}</div>}
+        {display && <div style={{ marginLeft: "auto", fontFamily: "'Barlow Condensed', sans-serif", fontSize: 12, color: "#10b981", alignSelf: "center" }}>{display} ✓</div>}
       </div>
       {mode === "plates" ? (
         <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
@@ -225,7 +459,7 @@ function SetDot({ done, onClick, color }) {
   );
 }
 
-function WorkoutView({ dayNum, workout, data, onUpdate, onBack, onComplete }) {
+function WorkoutView({ dayNum, workout, data, onUpdate, onBack, onComplete, allLogs }) {
   const [timer, setTimer] = useState(null);
 
   const toggleSet = (blockIdx, exIdx, setIdx) => {
@@ -239,10 +473,14 @@ function WorkoutView({ dayNum, workout, data, onUpdate, onBack, onComplete }) {
     onUpdate(next);
   };
 
-  const saveWeight = (blockIdx, exIdx, w) => {
+  const saveWeight = (blockIdx, exIdx, setIdx, w) => {
     const next = JSON.parse(JSON.stringify(data));
     if (!next.weights) next.weights = {};
-    next.weights[`${blockIdx}-${exIdx}`] = w;
+    if (!next.exerciseNames) next.exerciseNames = {};
+    const key = `${blockIdx}-${exIdx}-${setIdx}`;
+    next.weights[key] = w;
+    // Save exercise name for cross-day lookup
+    next.exerciseNames[key] = workout.blocks[blockIdx].exercises[exIdx].name;
     onUpdate(next);
   };
 
@@ -310,7 +548,8 @@ function WorkoutView({ dayNum, workout, data, onUpdate, onBack, onComplete }) {
                   const setArr = (data.sets || {})[`${bi}-${ei}`] || Array(numSets).fill(false);
                   const allSetsDone = setArr.length >= numSets && setArr.slice(0, numSets).every(Boolean);
                   const someSetsDone = setArr.some(Boolean);
-                  const prevW = (data.weights || {})[`${bi}-${ei}`];
+                  const lastWeight = ex.tracked ? findLastWeight(allLogs, ex.name) : null;
+                  const repsPerSet = ex.repsPerSet || Array(numSets).fill(ex.reps || null);
                   return (
                     <div key={ei} style={{ background: allSetsDone ? `${block.color}10` : "#0d0d0d", border: `1px solid ${allSetsDone ? block.color + "44" : someSetsDone ? block.color + "22" : "#1a1a1a"}`, borderRadius: 12, padding: "13px 16px", transition: "all 0.3s" }}>
                       <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: 12 }}>
@@ -320,12 +559,26 @@ function WorkoutView({ dayNum, workout, data, onUpdate, onBack, onComplete }) {
                         </div>
                         <div style={{ display: "flex", gap: 6, alignItems: "center", flexShrink: 0, marginTop: 2 }}>
                           {Array(numSets).fill(0).map((_, si) => (
-                            <SetDot key={si} done={!!setArr[si]} color={block.color} onClick={() => toggleSet(bi, ei, si)} />
+                            <div key={si} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 3 }}>
+                              {repsPerSet[si] && <span style={{ fontFamily: "'Barlow Condensed', sans-serif", fontSize: 9, color: "#555", letterSpacing: 1 }}>{repsPerSet[si]}r</span>}
+                              <SetDot done={!!setArr[si]} color={block.color} onClick={() => toggleSet(bi, ei, si)} />
+                            </div>
                           ))}
                         </div>
                       </div>
                       {ex.tracked && (
-                        <WeightLogger id={`${bi}-${ei}`} color={block.color} prevWeight={prevW} onSave={w => saveWeight(bi, ei, w)} />
+                        <div style={{ marginTop: 8, display: "flex", flexDirection: "column", gap: 6 }}>
+                          {Array(numSets).fill(0).map((_, si) => (
+                            <WeightLogger
+                              key={si}
+                              id={`${bi}-${ei}-${si}`}
+                              color={block.color}
+                              lastWeight={si === 0 ? lastWeight : (data.weights || {})[`${bi}-${ei}-${si}`] || lastWeight}
+                              setLabel={`Set ${si + 1}${repsPerSet[si] ? ` · ${repsPerSet[si]} reps` : ""}`}
+                              onSave={w => saveWeight(bi, ei, si, w)}
+                            />
+                          ))}
+                        </div>
                       )}
                     </div>
                   );
@@ -573,6 +826,7 @@ export default function MasterApp() {
         onUpdate={data => updateDayData(activeDay, data)}
         onBack={() => setScreen("home")}
         onComplete={() => completeDay(activeDay)}
+        allLogs={appData.logs}
       />
     );
   }
